@@ -5,6 +5,7 @@
 - The turtle should move smoothly toward the goal position
 - When it reaches the goal, it should stop completely (no wiggling)
 - The controller should handle different goal positions reliably
+- Move to 4 different position sequentally by prompt entering a new position after previous goal is reached
 
 ## Setup Instructions
 
@@ -69,3 +70,19 @@ ros2 run turtlesim_goal gotogoal.py
 - If the turtle circles or oscillates around the goal, check the angular velocity control
 
 Good luck!
+
+## Hints
+
+After starting turtlesim, you are able to see the names of topics and nodes
+
+```bash
+ros2 topic list
+```
+
+```
+/parameter_events
+/rosout
+/turtle1/cmd_vel
+/turtle1/color_sensor
+/turtle1/pose
+```
