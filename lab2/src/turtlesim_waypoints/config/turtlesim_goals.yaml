@@ -1,0 +1,15 @@
+turtlesim_waypoints:
+  ros__parameters:
+    waypoints: "[[1.0, 1.0], [9.0, 1.0], [9.0, 9.0], [5.5, 5.5]]"
+    
+    # Control parameters
+    distance_tolerance: 0.5
+    auto_start: true
+    loop_waypoints: false
+    
+    # Movement parameters for smoother transitions
+    max_linear_speed: 1.5
+    min_linear_speed: 0.3
+    linear_acceleration: 1.0
+    angular_speed_factor: 4.0
+    lookahead_distance: 0.6
